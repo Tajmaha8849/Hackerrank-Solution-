@@ -18,12 +18,12 @@ for i in range(len(lst)-1,-1,-2):
     #print(lst[i])
     if(lst[i]>lst[i-1]):
         bp=lst[i-1]
-        ind=i-1
+        index=i-1
         break
     else:
         continue
 #print(bp)
-#print(ind)
+#print(index)
 lst1=[]
 for j in range(ind+1,len(lst)):
     lst1.append(lst[i])
@@ -32,9 +32,9 @@ lst1.sort()
 
 
 
-temp=lst[ind]
-lst[ind]=lst1[0]
-lst[ind+1]=temp
+temp=lst[index]
+lst[index]=lst1[0]
+lst[index+1]=temp
 
 for j in range(len(lst)):
     print(lst[j],end='')
