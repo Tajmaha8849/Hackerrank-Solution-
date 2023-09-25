@@ -1,0 +1,36 @@
+"""
+Input:
+N = 5, S = 12
+A[] = {1,2,3,7,5}
+Output: 2 4
+Explanation: The sum of elements 
+from 2nd position to 4th position 
+is 12.
+"""
+
+
+lst=[1,2,3,4,5,6]
+sum=int(input("Enter the sum:"))
+s=0
+initial=0
+final=0
+j=1
+for i in range(len(lst)):
+    s=lst[i]
+    
+    if(sum==s):
+        print("Range is from :",initial)
+        break
+    else:
+        for j in range(i+1,len(lst)):
+            
+            s=s+lst[j]
+            if(sum==s):
+                print("Range is from :",i,"to",j)
+                break
+            
+    
+        
+        
+    
+    
